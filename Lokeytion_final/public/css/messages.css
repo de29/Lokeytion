@@ -1,0 +1,16 @@
+.modal-body1 {
+    /* fallback for old browsers */
+    background: white;
+    
+  color: #2e2e2e;
+    }
+
+p{
+    color: #2e2e2e;
+    margin: 3%;
+    text-align: justify;
+}
+
+.row5{
+    width: 100%;
+}

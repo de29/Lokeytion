@@ -1,0 +1,540 @@
+/**********************************/
+/********** General CSS ***********/
+/**********************************/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,700&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,700&family=Quicksand:wght@300;400;500;600;700&family=Righteous&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: #353535;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  background: #f3f6ff;
+}
+
+a {
+  color: #ffde59;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #353535;
+  outline: none;
+  text-decoration: none;
+}
+
+
+
+@media (min-width: 992px) {
+  .container-fluid {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+
+/**********************************/
+/********** Recherche CSS ***********/
+/**********************************/
+
+.Vous_Voulez {
+  background-color: #2e2e2e;
+  color: #ffde59;
+  font-size: 1.1em;
+  width: 200px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 7px 0 10px 0;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #2e2e2e;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+
+
+.text-center button:hover {
+  transform: scaleY(1.1);
+}
+
+.text-center button i {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+::placeholder {
+  color: #2e2e2e;
+}
+
+.text-center button {
+  color: rgb(255, 222, 89);
+  background-color: #353535;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+}
+
+.text-center button:hover {
+  background-color: #f5e0ac;
+  color: #404040;
+  border-color: #404040;
+}
+
+
+
+.product-short .input-group{
+  
+  width: 250px; 
+  border: 1px solid #2e2e2e;
+   border-radius: 7px;
+}
+.product-short .input-group .input-group-text{
+  background: #353535;
+  color: #ffde59;
+  height: 52px;
+  width: fit-content;
+
+}
+
+.product-search .input-group{
+  width:300px;
+}
+
+
+.product-search .input-group .mb-3 .form-control{
+  height: 52px;
+
+}
+
+.product-search .input-group .input-group-text{
+  background: #353535;
+  color: #ffde59;
+  height: 52px; 
+  border: 1px solid #353535;
+}
+
+.col-md-2 .product-date .dateDebut,.col-md-2 .product-date .dateFin{
+  color: #353535;
+}
+
+.titre{
+  text-align:center;
+  margin-bottom:4% ;
+}
+
+.titre hr{
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3); 
+  height: 1px; 
+  margin: 20px 0;
+}
+
+.titre h2{
+  display:inline-block; 
+  position:relative;
+  font-family: 'Quicksand', serif;
+  font-weight: 700;
+  color: #2e2e2e;
+}
+
+
+/**********************************/
+/******** Product Item CSS ********/
+/**********************************/
+
+.product-item {
+  position: relative;
+  /*box-shadow: 0 10px 10px #757676;*/
+  box-shadow: rgb(64, 64, 64) 0px 10px 10px;
+    border-radius: 10px;
+}
+
+.product-item .product-title {
+  padding: 15px;
+  text-align: center;
+  background: #2e2e2e;
+  transition: all 0.3s;
+}
+
+.product-item:hover .product-title {
+  background: #ffde59;
+}
+
+.product-item .product-title a,
+.product-item .product-title .ratting {
+  position: relative;
+  width: 100%;
+}
+
+.product-item .product-title a {
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.product-item .product-title .ratting i {
+  font-size: 14px;
+  color: #ffde59;
+}
+
+.product-item .product-content .price span {
+  margin-left: 12px;
+  text-decoration: line-through;
+  font-weight: 700;
+  color: #999999;
+}
+
+.product-item:hover .product-title a,
+.product-item:hover .product-title .ratting i {
+  color: #2e2e2e;
+}
+
+.product-item:hover .product-content .price span {
+  color: #2e2e2e;
+}
+
+.product-item .product-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-item .product-image a {
+  display: block;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+.product-item .product-image img {
+  width: 100%;
+  transition: all 0.3s;
+  height: 300px;
+}
+
+.product-item:hover .product-image img {
+  transform: scale(1.2);
+}
+
+.product-item .product-image .product-action {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 222, 89, 0.5);
+  transition: all 0.3s;
+  font-size: 0;
+  z-index: 1;
+  opacity: 0;
+}
+
+.product-item:hover .product-image .product-action {
+  opacity: 1;
+}
+
+.product-item .product-image .product-action button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 7px 0 10px 0;
+  font-size: 16px;
+  text-align: center;
+  color: #2e2e2e;
+  background: #ffde59;
+  border: 1px solid #2e2e2e;
+  border-radius: 4px;
+  transition: all 0.3s;
+  margin-top: 50px;
+}
+
+.product-item:hover .product-image .product-action button {
+  margin-top: 0;
+}
+
+.product-item .product-image .product-action button:last-child {
+  margin-right: 0;
+}
+
+.product-item .product-image .product-action button:hover {
+  color: #ffde59;
+  background: #2e2e2e;
+  border: 1px solid #ffde59;
+}
+
+.product-item .product-price {
+  padding: 20px;
+  background: #2e2e2e;
+  transition: all 0.3s;
+  height: 80px;
+  color: white;
+  display: flex;
+}
+
+.product-item .product-price .plus{
+  margin-left: 100px;
+}
+
+
+.product-item:hover .product-price {
+  background: #ffde59;
+}
+
+.product-item .product-price h3 {
+  display: inline-block;
+  color: #ffffff;
+
+  margin-left: auto;
+}
+
+.product-item .product-price h3 span {
+  font-size: 16px;
+  color: #ffde59;
+}
+
+.product-item:hover .product-price h3,
+.product-item:hover .product-price h3 span ,.product-item:hover .product-price{
+  color: #2e2e2e;
+}
+
+.product-item .product-price .btn {
+  float: right;
+  border: none;
+  color: #353535;
+  background: #ffde59;
+}
+.product-item .product-price .Lancerannonce{
+  border: none;
+  color: #353535;
+  background: #ffde59;
+  margin-left: 10px;
+  border-radius: 4px;
+
+}
+
+.product-item:hover .product-price .Lancerannonce{
+  background: #353535;
+
+}
+
+.product-item:hover .product-price .btn,
+.product-item .product-price .btn:hover {
+  color: #ffde59;
+  background: #2e2e2e;
+}
+
+.product-item .product-price .btn i {
+  margin-right: 5px;
+}
+
+/**********************************/
+/******** Product View CSS ********/
+/**********************************/
+.product-view {
+  position: relative;
+  width: 95%;
+  padding: 15px 0;
+  margin-top: 3%;
+}
+
+.product-view .product-view-top{
+  padding: 30px;
+  margin-bottom: 30px;
+  background: #ffde59;
+  box-shadow: 0 10px 10px #757676;
+}
+
+.product-view .product-view-top form{
+  width:100%;
+}
+
+.product-view .product-search,
+.product-view .product-prix,
+.product-view .product-date,
+.product-view .product-mois {
+  position: relative;
+  width: 100%;
+}
+
+.product-view .product-search input,
+.product-view .product-prix input,
+.product-view .product-date input,
+.product-view .product-mois input {
+  width: 100%;
+  height: 35px;
+  padding: 0 15px;
+  color: #999999;
+  background: #fff;
+  border: 1px solid #353535;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.product-view .product-search input:focus,
+.product-view .product-prix input:focus,
+.product-view .product-date input:focus,
+.product-view .product-mois input:focus {
+  border-color: #ffde59;
+}
+
+.product-view .product-search button,
+.product-view .product-prix button,
+.product-view .product-date button,
+.product-view .product-mois button {
+  position: absolute;
+  width: 35px;
+  height: 33px;
+  top: 1px;
+  right: 1px;
+  text-align: center;
+  background: transparent;
+  color: #353535;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  transition: all 0.3s;
+}
+
+.product-view .product-search button i,
+.product-view .product-prix button i,
+.product-view .product-date button i,
+.product-view .product-mois button i {
+  font-size: 16px;
+}
+
+.product-view .product-search button:hover,
+.product-view .product-prix button:hover,
+.product-view .product-date button:hover,
+.product-view .product-mois button:hover {
+  background: #ffde59;
+  color: #2e2e2e;
+}
+
+.product-view .product-short,
+.product-view .product-price-range {
+  position: relative;
+  width: 100%;
+  text-align: right;
+}
+
+.product-view .product-short .dropdown .dropdown-toggle,
+.product-view .product-price-range .dropdown .dropdown-toggle {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 5px 10px;
+  /*background: transparent;*/
+  background: white;
+  border: 1px solid #353535;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.product-view .product-short .dropdown .dropdown-toggle::after,
+.product-view .product-price-range .dropdown .dropdown-toggle::after {
+  float: right;
+  margin-top: 10px;
+}
+
+.product-view .product-short .dropdown-menu,
+.product-view .product-price-range .dropdown-menu {
+  margin: -1px 0 0 0;
+  border-radius: 0;
+}
+
+.product-view .product-item {
+  margin-bottom: 30px;
+}
+
+.product-view .pagination {
+  margin: 0;
+}
+
+.product-view .pagination .page-item .page-link {
+  color: #2e2e2e;
+  background: transparent;
+  border-color: #2e2e2e;
+}
+
+.product-view .pagination .page-item:hover .page-link,
+.product-view .pagination .page-item.active .page-link {
+  color: #ffde59;
+  background: #2e2e2e;
+}
+
+@media (max-width: 952) {
+  .product-view .pagination {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+
+  /* Style CSS pour la fenêtre modale */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal .modal-content1 {
+display: block;
+margin: 5% auto;
+width: 50%;
+height:100%;
+background-color: #fff;
+padding: 20px;
+text-align: center;
+position: relative;
+border-radius: 5px;
+position: relative;
+background-color: #ffde59; 
+color: #393e46;
+}
+
+.modal-img {
+width: 100%; 
+height: 100%;
+object-fit: cover; 
+}
+
+.close {
+    color: #777;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: -1%;
+    right: 1%;
+    cursor: pointer;
+}
+
+
+.date{
+  display: flex;
+}

@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,700&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,700&family=Quicksand:wght@300;400;500;600;700&family=Righteous&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+  }
+body{
+    background-color: #FFDE59;
+}
+.container{
+    width: 2000px;
+    margin: auto;
+    transition: 0.5s;
+    
+    
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    background-color:#fff;
+    height: 100vh;
+    display: inline-block;
+    border-color: #404040;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 0px 30px #2e2e2e; 
+}
+.active .card{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card h2{
+    color: #FFDE59; 
+    font-family: 'Quicksand', serif;
+  font-weight: 700;
+    margin-left: 40%;
+    padding: 0 20px;
+    height: 20px;
+    display: flex;
+   margin-top:-0.5%;
+
+}
+.title{
+   
+    background-color:#2e2e2e;
+    padding: 3%;
+    height: 3%;
+    align-items: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bold;
+    display: flex;
+
+}
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    
+
+}
+.card .checkOut div{
+    background-color: #2e2e2e;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #ffde59;
+}
+.card .checkOut div:nth-child(2){
+    background-color: #1C1F25;
+    color: #fff;
+}
+
+.listCardPanier li{
+    display: grid;
+    grid-template-columns: 20% repeat(3, 30% 20% 20%);
+    color: black;
+    row-gap: 100px;
+    padding:0;
+    margin-right: 20%;
+    align-items: center;
+
+}
+
+button {
+    color: #404040;
+    background-color: #ffde59;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-color: #404040;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+
+.listCard li img{
+    width: 100px;
+    height: 100px;
+ border-radius: 50%;
+}
+
+.SupprimerPanier {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    
+}
+
+
+.bi-trash{
+color:#2E2E2E;
+background-color:#ffde59;
+
+
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-color: #404040;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 5px;
+
+}
+
+.louer{
+    color: #2E2E2E;
+    background-color: #ffde59;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-color: #404040;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 5px;
+   
+}
+.louer:hover{
+    color:#ffde59 ;
+    background-color:#404040;
+}
+.bi-trash:hover{
+    
+    background-color:#2E2E2E;
+    color: #ffde59;
+    border: none;
+  
+}
+
+hr{
+    border-color: #2E2E2E;
+    
+}
+
+.scroll-container {
+    max-height: 77%; 
+    overflow-y: auto; 
+  }
+
+  .scroll-container::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.scroll-container::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color:  rgba(46, 46, 46, 0.7); 
+    visibility: hidden;
+}
+
+.scroll-container:hover::-webkit-scrollbar-thumb{ 
+    visibility: visible;
+}
+  
+.name{
+   
+    padding-right: 40px;
+}
+.date{
+    padding-right: 10px;
+}
+
+.panierOptions{
+    display: flex;
+}

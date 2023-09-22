@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,700&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,700&family=Quicksand:wght@300;400;500;600;700&family=Righteous&display=swap');
+
+:root {
+  --clr-s: #646464;
+  --clr-l: #FFFFFF;
+  --clr-p-l: #FFF7AE;
+  --clr-p: #FFD965;
+  --clr-p-d: #FFB82B;
+  --clr-p-d-2: #C18400; 
+  
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body,
+  html {
+    position: relative;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+   /* background: linear-gradient(180deg, #dfdfdf, #becad6);*/
+    overflow: hidden;
+    background-color: #fddc59;
+    margin: 0;
+  }
+
+  a:visited,
+  a:link {
+    color: unset;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  p{
+    color: #efe9ea;
+  }
+  button,
+  input[type='submit'] {
+    font-family: inherit;
+  }
+  
+  .container {
+    width: 50rem;
+    height: 35rem;
+    box-shadow: 2px 3px 7px 3px #00000014;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 100rem;
+    border-radius: 10px;
+    background: #efe9ea;
+  }
+  
+  .side-1 {
+    transform: rotateY(0deg);
+    transform-origin: 100%;
+   /* background-image: linear-gradient(90deg, var(--clr-p) 0%, var(--clr-p-d) 50%, var(--clr-p-d-2) 100%);*/
+   background-color: #404040;
+    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .side-2 {
+    transform: rotateY(-180deg);
+    transform-origin: 0%;
+    left: 50%;
+   /* background-image: linear-gradient(90deg, var(--clr-p-d-2) 0%, var(--clr-p-d) 50%, var(--clr-p) 100%);*/
+   background-color: #404040;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .side-1,
+  .side-2 {
+    background-color: #404040;
+    backface-visibility: hidden;
+    background-size: 200%;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    transition: 1200ms;
+   /* box-shadow: inset 0px 0px 100px 7px #e0660059;*/
+    z-index: 10;
+  }
+  
+  .header {
+    position: absolute;
+    color: #fddc59;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+   /* text-shadow: 2px 1px 2px #efe9ea;*/
+  }
+  
+  .toggle-log {
+    font-size: 1rem;
+    padding: .5rem 1.5rem;
+    background: #404040;
+    border: 1px solid #fddc59;
+    color: #fddc59;
+    border-radius: 2rem;
+    transition: 200ms;
+    margin-top: 20px;
+  }
+  .toggle-log:hover {
+    background: #fddc59;
+    color: #404040;
+  }
+  .toggle-log:focus {
+    border: 2px solid var(--clr-l);
+    outline: none;
+  }
+  
+
+  .sign-in{
+    width:50%;
+    position:absolute;
+    transform:translateY(-50%);
+    left:50%;
+    top:50%;
+    text-align:center;
+  }
+  
+  .sign-in fieldset.block{
+    transform:translateX(10%);
+    opacity:0;
+  }
+  
+  .sign-up{
+    width:50%;
+    position:absolute;
+    transform:translateY(-50%);
+    left:0;
+    top:50%;
+    text-align:center;
+  }
+  
+  .sign-up fieldset.block{
+    transform:translateX(-10%);
+    opacity:0;
+  }
+  
+  .log-buttons{
+    margin-top:1rem;
+  }
+  
+  .log-btn{
+    display:inline-block;
+    border:1px solid #404040;
+    width:2rem;
+    height:2rem;
+    border-radius:50%;
+    position:relative;
+    transition:200ms;
+    margin:0 1rem;
+  }
+  
+  .log-btn:hover{
+    cursor:pointer;
+    border:1px solid transparent;
+  }
+  
+  .log-btn::before{
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    display: inline-block;
+    font-size:1rem;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    left:50%;
+    top:50%;
+    font-weight: 400;
+  }
+  
+  .log-fb::before{
+    content: "\f39e";
+    color:#3b5998;
+  }
+  
+  .log-gp::before{
+    content: "\f0d5";
+    color:#d34836;
+  }
+  
+  .log-li::before{
+    content: "\f0e1";
+    color:#0077b5;
+  }
+  
+  .log-fb:hover{
+    background:#3b5998;
+  }
+  
+  .log-gp:hover{
+    background:#d34836;
+  }
+  
+  .log-li:hover{
+    background:#0077b5;
+  }
+  
+  .log-buttons a:visited,
+  .log-buttons a:link{
+    text-decoration:none;
+  }
+  
+
+  .input-text {
+    display: block;
+    margin: 1rem auto;
+    border: none;
+    background: #4e598c2b;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    width: 50%;
+    margin-top: 10px;
+  }
+  .input-label {
+    position: relative;
+    margin-bottom: 1em;
+  }
+
+  .input-label label {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #999;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+    font-style: italic;
+  }
+
+  .input-label input {
+    display: block;
+    width: 70%;
+    padding: 14px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 20px;
+  }
+
+  .input-label input:focus {
+    border-color: #fddc59;
+    box-shadow: 0 0 0 2px rgba(0, 135, 255, 0.2);
+    margin-top: 10px;
+  }
+
+  .input-label input:focus + label,
+  .input-label input + label {
+    transform: translate(0, -145%) scale(0.8);
+    font-size: 18px;
+    color: #404040;
+  }
+  .input-submit{
+    display:block;
+    margin: 1rem auto;
+    font-size:1rem;
+    padding:.5rem 2rem;
+    background: #fddc59;
+    border:1px solid #404040;
+    color:#404040;
+    border-radius:2rem;
+    transition:200ms;
+    position:relative;
+  }
+  
+  .input-submit:hover{
+    background:#404040;
+    color:#fddc59;
+    border:1px solid #fddc59;
+  }
+  
+  fieldset{
+    border:none;
+    position:relative;
+    transition:1000ms ease;
+  }
+  
+  fieldset.block:after{
+    content:'';
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    position:absolute;
+    background:transparent;
+  }
+  
